@@ -1,7 +1,6 @@
 import React, { useState, ChangeEvent } from 'react';
 import styles from './Donation.module.scss';
 import checkmark from '../../utils/checkmark.svg';
-import TokenSelection from '../../components/atoms/token-selection/Token-selection';
 
 const Donation = () => {
   const [activeTab, setActiveTab] = useState<string>('Donate');
@@ -100,19 +99,7 @@ const Donation = () => {
                   <button className={styles.donateButton}>DONATE</button>
                 </div>
               </div>
-              <div className={styles.payWithContainer}>
-                <div className={styles.payWithText}>DONATE WITH</div>
-                <div className={styles.tokenDropdown}>
-                  {showTokenSelection ? (
-                    <TokenSelection onClose={() => setShowTokenSelection(false)} />
-                  ) : (
-                    <button className={styles.tokenButton} onClick={handleTokenDropdownClick}>
-                      Select a token
-                    </button>
-                  )}
-                </div>
-                <p className={styles.payWithDescription}>Select the tokens & coins you wish to donate.</p>
-              </div>
+             
               <div className={styles.donationAmountContainer}>
                 <div className={styles.donationAmountText}>DONATION AMOUNT</div>
                 <div className={styles.donationAmountInputContainer}>
