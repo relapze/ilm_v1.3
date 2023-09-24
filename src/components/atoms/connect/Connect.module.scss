@@ -1,0 +1,31 @@
+@import "../../../stylesheets/variables.scss";
+
+$button-padding: $spacing-xs $spacing-sm;
+$button-bg-color: $design-purple;
+$button-txt-color: $base-white;
+$button-border-radius: 0 $border-radius-md 0 $border-radius-md;
+
+$button-transition: background-color $default-transition-duration
+  $default-transition-mode;
+
+.button {
+  border: unset;
+
+  padding: $button-padding;
+
+  border-radius: $button-border-radius;
+
+  background-color: $button-bg-color;
+
+  color: $button-txt-color;
+
+  transition: $button-transition;
+
+  cursor: pointer;
+
+  &.initial,
+  &:hover,
+  &.active {
+    background-color: rgba($button-bg-color, 0.2);
+  }
+}

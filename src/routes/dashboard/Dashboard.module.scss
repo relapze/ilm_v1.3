@@ -1,0 +1,726 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../utils/Illumi - Background - Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+
+
+/* tabs */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin-top: -700px;
+    position: relative;
+    z-index: 2;
+}
+
+.tabs .tab {
+    flex: 0 0 120px;
+    padding: 6px 12px;
+    font-family: 'roboto';
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    transition: background 0.3s;
+    border: 1px solid #6200E8;
+    outline: none;
+    text-align: center;
+    border-radius: 0;
+    margin: 0;
+}
+
+.tabs .tab:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+}
+
+.tabs .tab:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+.tabs .tab.--selected {
+    background: #6200E8;
+    border-color: #6200E8;
+}
+
+.tabs .tab:hover {
+    background: rgba(98, 0, 232, 0.5);
+    border-color: rgba(98, 0, 232, 0.5);
+}
+
+.tabs .tab:not(:last-child) {
+    border-right: 2px solid #6200E8;
+}
+
+.tab-panel {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.tabContent {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+/* analytics tab */
+
+.analyticstab-rectangle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 1300px;
+    height: 950px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6200E8;
+}
+
+
+/* chart section */
+
+.analyticstab-chartrectangle {
+    background-color: #241C32;
+    width: 1100px;
+    margin-top: -200px;
+    height: 600px;
+    padding: 20px;
+    border: 2px solid #6200E8;
+    position: relative;
+    display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    /* Align items with equal space */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.chart-buttons {
+    margin-top: -500px;
+    margin-bottom: 10px;
+    margin-left: 335px;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: transparent;
+        height: 32px;
+        width: 85px;
+        text-align: center;
+        font-size: 9px;
+        font-family: 'roboto';
+        font-weight: bold;
+        color: white;
+        border: 2px solid #6200e8;
+        border-radius: 8px;
+        line-height: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        /* Prevent line breaks */
+        &:first-child {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:not(:first-child):not(:last-child) {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:hover {
+            background-color: #6200e8;
+            opacity: 0.5;
+        }
+        &.--selected {
+            background-color: #6200e8;
+        }
+    }
+}
+
+.analyticstab-chartstatcontainer {
+    position: absolute;
+    top: 85%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.analyticstab-chartstatbox {
+    width: 333px;
+    height: 220px;
+    background-color: #241C32;
+    border: 2px solid #6200E8;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyticstab-chartstatheading {
+    color: white;
+    font-size: 22px;
+    margin-top: -140px;
+    font-weight: bold;
+}
+
+
+/*recent donation */
+
+.analyticstab-recentdonationheading {
+    margin-top: 750px;
+    margin-bottom: -200px;
+    margin-left: -300px;
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-family: Impact, 'Charcoal', Sans-Serif;
+}
+
+.analyticstab-recentdonationrectangle {
+    position: absolute;
+    margin-top: 1050px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 1300px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6200E8;
+}
+
+
+/*Alert tab*/
+
+.alertstab-rectangle {
+    position: absolute;
+    margin-top: 483px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 1300px;
+    height: 1450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6200E8;
+}
+
+
+/*Alert type*/
+
+.alertstab-alerttypecontainer {
+    text-align: left;
+}
+
+.alertstab-alerttypeheading {
+    position: absolute;
+    color: white;
+    margin-top: -1300px;
+    margin-left: -820px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alertstab-alerttypesubheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -1200px;
+    margin-left: -725px;
+    text-align: left;
+}
+
+.alertstab-alerttypealertslectionbox {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 350px;
+    height: 67px;
+    margin-left: -600px;
+    margin-top: -1050px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+
+/*font section*/
+
+alertstab-fontcontainer {
+    position: absolute;
+    text-align: left;
+}
+
+.alertstab-fontheading {
+    color: white;
+    position: absolute;
+    margin-top: -450px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: -465px;
+}
+
+.alertstab-fonttypeheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -410px;
+    margin-left: -465px;
+    text-align: left;
+}
+
+.alertstab-fonttypeinput {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    height: 39px;
+    margin-left: -465px;
+    margin-top: -380px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-alertfontsizeheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -310px;
+    margin-left: -465px;
+    text-align: left;
+}
+
+.alertstab-alertfontsizeinput {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    height: 39px;
+    margin-left: -465px;
+    margin-top: -280px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-subscribercountfontsizeheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -220px;
+    margin-left: -465px;
+    text-align: left;
+}
+
+.alertstab-subscribercountfontsizeinput {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 70px;
+    height: 39px;
+    margin-left: -465px;
+    margin-top: -190px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-fontcolorheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -130px;
+    margin-left: -465px;
+    text-align: left;
+}
+
+.alertstab-fontcolorinput {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 90px;
+    height: 39px;
+    margin-left: -465px;
+    margin-top: -100px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-fontcolordefaultselections {
+    display: flex;
+    align-items: center;
+    margin-left: -355px;
+    margin-top: -95px;
+}
+
+.color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.alertstab-profanityfilterheading {
+    color: white;
+    position: absolute;
+    margin-top: -1150px;
+    margin-left: 450px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alertstab-profanityfiltermessageheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -1080px;
+    margin-left: 330px;
+    text-align: left;
+}
+
+.alertstab-obsurlheading {
+    color: white;
+    position: absolute;
+    margin-top: -860px;
+    margin-left: 344px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alertstab-alertbrowsersourceheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -780px;
+    margin-left: 478px;
+    text-align: left;
+}
+
+.alertstab-alertbrowsersourcelinkbox {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    height: 39px;
+    margin-top: -700px;
+    margin-left: 510px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-subscribecountheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: -530px;
+    margin-left: 430px;
+    text-align: left;
+}
+
+.alertstab-subscribecountbox {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    height: 39px;
+    margin-left: 510px;
+    margin-top: -450px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-previewheading {
+    color: white;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -175px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alertstab-previewrectangle {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 750px;
+    height: 500px;
+    margin-left: -200px;
+    border: 2px solid #6200e8;
+    margin-top: 680px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.alertstab-testdonationbutton {
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 850px;
+    background-color: #6200E8;
+    color: white;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.alertstab-testdonationbutton:hover {
+    opacity: 0.8;
+}
+
+.alertstab-testsubscriptionbutton {
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 850px;
+    background-color: #6200E8;
+    color: white;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.alertstab-testsubscriptionbutton:hover {
+    opacity: 0.8;
+}
+
+.alertstab-savebutton {
+    position: absolute;
+    margin-top: -175px;
+    margin-left: 400px;
+    background-color: #6200E8;
+    color: white;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.alertstab-savebutton:hover {
+    opacity: 0.8;
+}
+
+
+/*SETTINGS tab*/
+
+.settingstab-rectangle {
+    position: absolute;
+    margin-top: 158px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 1300px;
+    height: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6200E8;
+}
+
+.settingstab-donationpagenameheading {
+    color: white;
+    position: absolute;
+    margin-top: -700px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.settingstab-donationpagenameinput {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 350px;
+    height: 39px;
+    margin-top: -600px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: center;
+    border-radius: 4px;
+}
+
+.settingstab-uploadprofileimageheading {
+    color: white;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -260px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.settingstab-profileimage {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -180px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url('../../utils/PFP (4).png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.settingstab-uploadbutton {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: -180px;
+    background-color: #6200E8;
+    color: white;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.settingstab-uploadbutton:hover {
+    opacity: 0.8;
+}
+
+.settingstab-maximumsizeheading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-left: -60px;
+    margin-top: 175px;
+    text-align: left;
+}
+
+.settingstab-linktoyourdonationpageheading {
+    color: white;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -280px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.settingstab-linktoyourdonationpageselectionbox {
+    background-color: #241C32;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 350px;
+    height: 39px;
+    margin-left: -295px;
+    margin-top: 350px;
+    font-size: 14px;
+    font-family: 'roboto';
+    text-align: left;
+    border-radius: 4px;
+}
+
+.settingstab-savechangesbutton {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: #6200E8;
+    color: white;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 0 8px 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.settingstab-savechanges button:hover {
+    opacity: 0.8;
+}

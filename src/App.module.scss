@@ -1,0 +1,22 @@
+@import "./stylesheets/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$app-font-color: $text-color-primary;
+$app-font-family: "roboto", sans-serif;
+// the below can be used for light/dark theme
+// :root {
+//   --background:
+//   --color:
+// }
+// [data-theme="dark"] {
+//   --background:
+//   --color:
+// }
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: $app-font-color;
+  font-family: $app-font-family;
+}
+
+/* Add this CSS to your main global styles or app.scss file */

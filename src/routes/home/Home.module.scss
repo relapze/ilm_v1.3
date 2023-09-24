@@ -1,0 +1,489 @@
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    &::before {
+        content: "";
+        position: fixed;
+        /* Change position to fixed */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../utils/Illumi - Background - Home.png");
+        background-size: cover;
+        background-position: top center;
+        opacity: 1;
+        z-index: -1;
+    }
+}
+
+.heading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    background: linear-gradient(to left, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 150px;
+    right: 1100px;
+    line-height: 1.2;
+    /* Adjust the line-height value as needed */
+}
+
+.heading span {
+    display: block;
+}
+
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio, adjust as needed */
+    overflow: hidden;
+}
+
+.heroImage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* Adjust this value as needed */
+    transform: translateX(-22%);
+    /* Add this line */
+    width: 900px;
+    /* Adjust the width as needed */
+    height: 900px;
+    /* Adjust the height as needed */
+    margin-top: -200px;
+    object-fit: cover;
+}
+
+
+/* Community section */
+
+.communityBox {
+    width: 1000px;
+    height: 120.5px;
+    margin: 130px auto 166.9px auto;
+    padding: 38.2px 120.2px 29.5px 120.2px;
+    border-radius: 0px;
+    position: relative;
+}
+
+.communityBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #6200e8 1%, #7c4dff 99%);
+    opacity: 0.23;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.communityHeading {
+    font-family: "roboto";
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoGroup {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.logoSpacer {
+    width: 45px;
+    /* Adjust the width as needed */
+}
+
+.instagramLogo {
+    width: 67px;
+    height: 67px;
+    /* Add any additional styles for Instagram logo */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.instagramLogo:hover {
+    opacity: 0.5;
+}
+
+.twitterLogo {
+    width: 90px;
+    height: 90px;
+    /* Add any additional styles for Twitter logo */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.twitterLogo:hover {
+    opacity: 0.5;
+}
+
+.discordLogo {
+    width: 45px;
+    height: 45px;
+    /* Add any additional styles for Discord logo */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.discordLogo:hover {
+    opacity: 0.5;
+}
+
+.telegramLogo {
+    width: 40px;
+    height: 40px;
+    /* Add any additional styles for Telegram logo */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.telegramLogo:hover {
+    opacity: 0.5;
+}
+
+.button {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 395px;
+    right: 445px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 8px;
+    background-color: rgba(98, 0, 232, 0.2);
+    border: none;
+    z-index: 2;
+}
+
+.button.initial,
+.button:hover,
+.button.active {
+    background-color: #6200e8;
+    color: #ffffff;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+
+/* Content Platforms Section */
+
+.creatorPlatform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.creatorHeading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.creatorBody {
+    font-family: "roboto";
+    font-size: 22px;
+    color: #6200e8;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+
+/* Carousel Section */
+
+.carouselSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* Adjust the margin-top value as needed */
+}
+
+.carouselHeading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.carouselBody {
+    font-family: "roboto";
+    font-size: 22px;
+    color: #6200e8;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+/* How it works Section */
+
+.howitworksSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    /* Adjust the margin-top value as needed */
+}
+
+.howitworksHeading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.howitworksvideo {
+    position: relative;
+    margin-left: 270px;
+    margin-bottom: -50px;
+    height: 70%;
+    width: 70%;
+}
+
+
+/* fee Section */
+
+.feeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    /* Adjust the margin-top value as needed */
+}
+
+.feeHeading {
+    margin-right: 938px;
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.feeBody {
+    font-family: "roboto";
+    margin-right: 870px;
+    font-size: 22px;
+    color: #6200e8;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.feeButton {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 25px;
+    text-decoration: none;
+    right: 524px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 8px;
+    background-color: rgba(98, 0, 232, 0.2);
+    border: none;
+    z-index: 3;
+}
+
+.feeButton.initial,
+.feeButton:hover,
+.feeButton.active {
+    background-color: #6200e8;
+    color: #ffffff;
+}
+
+.feeButton.initial {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.feeButton.active {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.feeButton:hover {
+    opacity: 0.5;
+}
+
+.feevideo {
+    position: relative;
+    margin-top: -330px;
+    margin-left: 950px;
+    width: 35%;
+    height: 35%;
+}
+
+
+/* revenue Section */
+
+.revenueSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    /* Adjust the margin-top value as needed */
+}
+
+.revenueHeading {
+    margin-left: 830px;
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.revenueBody {
+    font-family: "roboto";
+    margin-left: 890px;
+    font-size: 22px;
+    color: #6200e8;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.revenueButton {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 25px;
+    left: 570px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 8px;
+    background-color: rgba(98, 0, 232, 0.2);
+    border: none;
+    z-index: 3;
+}
+
+.revenueButton.initial,
+.revenueButton:hover,
+.revenueButton.active {
+    background-color: #6200e8;
+    color: #ffffff;
+}
+
+.revenueButton.initial {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.revenueButton.active {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.revenueButton:hover {
+    opacity: 0.5;
+}
+
+.stakeiconvideo {
+    position: relative;
+    margin-top: -260px;
+    width: 45%;
+    height: 45%;
+}
+
+
+/* security Section */
+
+.securitySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* Adjust the margin-top value as needed */
+}
+
+.securityHeading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.securityBody {
+    font-family: "roboto";
+    font-size: 22px;
+    color: #6200e8;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.blockchainiconvideo {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 380px;
+    width: 60%;
+    height: 60%;
+}

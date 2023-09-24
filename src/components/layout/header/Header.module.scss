@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    z-index: 3;
+    /* Adjust the padding values according to your preference */
+    background: transparent;
+    /* Set the background color to transparent */
+}
+
+.navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectKitButton button {
+    padding: 8px 16px;
+    /* Adjust the padding values according to your preference */
+    border-radius: 8px;
+    /* Adjust the border radius value according to your preference */
+    transition: background-color 0.3s ease-in-out;
+    /* Adjust the transition properties according to your preference */
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "deposit": "WETH",
+    "borrow": "USDC",
+    "pools": 10
+  },
+  {
+    "deposit": "USDC",
+    "borrow": "WETH",
+    "pools": 5
+  },
+  {
+    "deposit": "USDC",
+    "borrow": "USDT",
+    "pools": 2
+  },
+  {
+    "deposit": "USDT",
+    "borrow": "USDC",
+    "pools": 1
+  }
+]

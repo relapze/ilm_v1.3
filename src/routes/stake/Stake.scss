@@ -1,0 +1,507 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../utils/Illumi - Background - Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+
+.stake-container {
+    text-align: center;
+    margin-top: -100px;
+    z-index: 3;
+    height: 600px;
+    /* Adjust the height as needed */
+}
+
+.stakeheading {
+    color: white;
+    font-size: 60px;
+    font-family: Impact, 'Charcoal', Sans-Serif;
+}
+
+.stakesubheading {
+    color: #6200E8;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+/*epoch section */
+
+.current-stats-container {
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.currentepochendsheading {
+    margin-right: 300px;
+    font-size: 18px;
+    color: white;
+}
+
+.stakecurrentstatsrectangle {
+    margin-top: 20px;
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #6200E8;
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 98px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    flex: 1;
+    background-color: #241C32;
+    padding: 10px;
+    opacity: 1;
+    margin: 0 10px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.stat-heading {
+    font-size: 14px;
+    color: #6200E8;
+}
+
+.questionpopuplogo-container {
+    margin-left: 165px;
+    margin-top: -20px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.questionpopuplogo {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.questionpopup-container {
+    margin-bottom: 0px;
+}
+
+.questionpopuprectangle {
+    position: absolute;
+    top: -100px;
+    left: 30px;
+    width: 205px;
+    height: 100px;
+    background-color: #241C32;
+    border: 2px solid #6200E8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.questionpopupheading {
+    font-size: 14px;
+}
+
+
+/*YOUR STAKE*/
+
+.yourstakecontainer {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 3;
+}
+
+.yourstakeheading {
+    color: white;
+    font-size: 48px;
+    font-family: Impact, 'Charcoal', Sans-Serif;
+}
+
+.yourstakerectangle {
+    margin-top: 20px;
+    background-color: rgba(98, 0, 232, 0.08);
+    width: 1000px;
+    height: 1400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #6200E8;
+}
+
+
+/*YOUR STAKE STATS*/
+
+.yourstakestatboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 800px;
+    height: 98px;
+}
+
+.yourstakestatbox {
+    flex: 1;
+    background-color: #241C32;
+    padding: 10px;
+    opacity: 1;
+    margin: 0 10px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.yourstakestatheading {
+    font-size: 14px;
+    margin-top: -3px;
+    color: #6200E8;
+}
+
+
+/*STAKE TABS */
+
+.stake-tabs {
+    display: flex;
+    margin-top: 150px;
+    position: absolute;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.stake-tab {
+    flex: 1;
+    background-color: transparent;
+    padding: 10px;
+    opacity: 1;
+    margin-right: -2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid #6200e8;
+    /* Change the border color here */
+    z-index: 2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.withdraw-tab {
+    flex: 1;
+    background-color: transparent;
+    padding: 10px;
+    opacity: 1;
+    margin-right: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 0;
+    border: 2px solid #6200e8;
+    /* Change the border color here */
+    z-index: 2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #6200e8;
+}
+
+
+/* STAKE TAB */
+
+.stake-tabrectangle {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    margin-top: 240px;
+    background-color: #241c32;
+    border: 1px solid #6200e8;
+    /* Add any additional styling here */
+}
+
+.stake-tabheading {
+    font-size: 22px;
+    font-family: 'roboto';
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.stake-tabenterILMinput {
+    color: #fff;
+    background-color: rgba(122, 48, 243, 0.11);
+    border: 1px solid #6200e8;
+    outline: none;
+    height: 42px;
+    width: 400px;
+    margin-top: -200px;
+    text-align: center;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.stake-tablockforheading {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: -4px;
+}
+
+.stake-tablockforbuttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: transparent;
+        height: 32px;
+        width: 85px;
+        text-align: center;
+        font-size: 9px;
+        font-family: 'roboto';
+        font-weight: bold;
+        color: white;
+        border: 2px solid #6200e8;
+        border-radius: 8px;
+        line-height: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        /* Prevent line breaks */
+        &:first-child {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:not(:first-child):not(:last-child) {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        &:hover {
+            background-color: #6200e8;
+            opacity: 0.5;
+        }
+        &.selected {
+            background-color: #6200e8;
+        }
+    }
+}
+
+.stake-tablockeduntilheading {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 8px;
+    margin-left: -300px;
+}
+
+.stake-tabstakeILMbutton {
+    margin-top: 10px;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: #6200e8;
+        height: 32px;
+        width: 100px;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'roboto';
+        font-weight: bold;
+        color: white;
+        border: 2px solid #6200e8;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 8px;
+        cursor: pointer;
+        line-height: 8px;
+        /* Adjust the line-height to vertically align the text */
+        &:hover {
+            opacity: 0.5;
+        }
+        &.selected {
+            background-color: #6200e8;
+        }
+    }
+}
+
+
+/* WITHDRAW TAB*/
+
+.withdraw-content {
+    position: absolute;
+    margin-left: -600px;
+}
+
+.withdraw-tabrectangle {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    margin-top: 240px;
+    background-color: #241c32;
+    border: 1px solid #6200e8;
+    /* Add any additional styling here */
+}
+
+.withdraw-tabheading {
+    font-size: 22px;
+    font-family: 'roboto';
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.withdraw-tabwithdrawheading {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6200e8;
+    margin-top: 10px;
+}
+
+.withdraw-tabavailableheading {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: -400px;
+    margin-top: 52px;
+}
+
+.withdraw-tabwithdrawILMbutton {
+    margin-top: 12px;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: #6200e8;
+        height: 32px;
+        width: 120px;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'roboto';
+        font-weight: bold;
+        color: white;
+        border: 2px solid #6200e8;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 8px;
+        cursor: pointer;
+        line-height: 8px;
+        &:hover {
+            opacity: 0.5;
+        }
+        &.selected {
+            background-color: #6200e8;
+        }
+    }
+}
+
+
+/* Revenue Share */
+
+.revenue-share-rectangle {
+    position: absolute;
+    z-index: 4;
+    margin-top: 600px;
+    width: 600px;
+    height: 650px;
+    position: absolute;
+    background-color: #241c32;
+    border: 1px solid #6200e8;
+}
+
+.revenue-share-heading {
+    font-size: 22px;
+    font-family: 'roboto';
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+.purple-text {
+    color: #6200e8;
+}
+
+.white-text {
+    color: white;
+}
+
+.revenue-share-box {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 80px;
+    z-index: 4;
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    background-color: rgba(122, 48, 243, 0.11);
+}
+
+.revenue-stat-heading {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 450px;
+    margin-right: 260px;
+}
+
+.revenue-sharebutton {
+    margin-top: 525px;
+    z-index: 5;
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        background-color: #6200e8;
+        height: 32px;
+        width: 120px;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'roboto';
+        font-weight: bold;
+        color: white;
+        border: 2px solid #6200e8;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 8px;
+        cursor: pointer;
+        line-height: 8px;
+        &:hover {
+            opacity: 0.5;
+        }
+        &.selected {
+            background-color: #6200e8;
+        }
+    }
+}

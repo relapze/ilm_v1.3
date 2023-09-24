@@ -1,0 +1,41 @@
+@import "../../../stylesheets/variables.scss";
+
+$nav-item-color: $text-color-primary;
+
+$nav-item-bg-color: none;
+$nav-item-bg-color--active: $design-purple;
+$nav-item-bg-color--hover: rgba($design-purple, 0.2);
+
+$nav-item-padding: $spacing-xs $spacing-sm;
+
+$nav-item-border-radius: $spacing-sm 0 $spacing-sm 0;
+$nav-item-transition: background-color 0.3s ease-in-out;
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  padding: $nav-item-padding;
+
+  border-radius: $nav-item-border-radius;
+
+  color: $nav-item-color;
+  text-decoration: none;
+
+  transition: $nav-item-transition;
+
+  &.active {
+    background: $nav-item-bg-color--active;
+  }
+
+  &:not(:last-child) {
+    margin-right: $spacing-sm;
+  }
+
+  &:hover {
+    background: $nav-item-bg-color--hover;
+  }
+}

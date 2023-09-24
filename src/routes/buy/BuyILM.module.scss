@@ -1,0 +1,103 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Ensure the popup is on top of other content */
+}
+
+.popup {
+    background-image: linear-gradient( 47deg, #6200e8 -22%, #5e01de -21%, #5006b5 -15%, #420a90 -9%, #370e6f -2%, #2d1154 5%, #26143e 14%, #20162d 23%, #1c1721 35%, #19181a 52%, #191919 99%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    height: 500px;
+    z-index: 10000;
+    /* Ensure the popup is on top of other content */
+    position: relative;
+}
+
+.popup-container {
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+/* Apply opacity to the underlying page */
+
+body {
+    opacity: 1;
+    /* Default opacity */
+}
+
+.overlay::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    /* Allow interaction with the popup */
+    z-index: 9998;
+    /* Below the popup */
+    opacity: 0.8;
+    /* Opacity value */
+}
+
+.purchase-method-heading {
+    font-family: Impact, "Charcoal", Sans-Serif;
+    margin-left: 235px;
+    font-size: 30px;
+    position: absolute;
+}
+
+.box {
+    margin-top: 70px;
+    width: 100px;
+    height: 300px;
+    z-index: 5;
+    background-color: rgba(98, 0, 232, 0.08);
+    flex: 0 0 calc(50% - 10px);
+    padding: 20px;
+    text-align: center;
+    &:hover {
+        background-color: #6200E8;
+    }
+}
+
+.logo {
+    position: absolute;
+    margin-left: 30px;
+    width: 30%;
+    height: 30%;
+}
+
+.purchase-text1 {
+    margin-top: 200px;
+}
+
+.coming-soon-heading {
+    position: absolute;
+    font-family: "roboto";
+    font-size: 22px;
+    margin-top: 80px;
+    margin-left: 90px;
+    opacity: 0.2;
+}
+
+.purchase-text2 {
+    margin-top: 200px;
+}

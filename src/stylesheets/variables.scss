@@ -1,0 +1,31 @@
+/* 
+    Global variables: import this stylesheet in whichever 
+    module.scss file needs access to these variables.
+*/
+
+// Spacing/sizing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 8rem;
+$border-radius-xs: 4px;
+$border-radius-sm: 6px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+// Colors - declarative
+$colors: ( base: ( black: rgb(0, 0, 0), white: rgb(255, 255, 255), ), design: ( // add additional colors from design here
+purple: rgba(98, 0, 232), grey-dark: rgb(31, 31, 31), grey-light: rgb(96, 93, 109), ), );
+// Colors - descriptive
+$base-black: map-get(map-get($colors, base), black);
+$base-white: map-get(map-get($colors, base), white);
+$design-purple: map-get(map-get($colors, design), purple);
+$design-grey-dark: map-get(map-get($colors, design), grey-dark);
+$design-grey-light: map-get(map-get($colors, design), grey-light);
+// Typography
+$text-color-primary: $base-white;
+$text-color-secondary: $design-purple;
+// Transitions
+$default-transition-duration: 0.15s;
+$default-transition-mode: ease-in-out;

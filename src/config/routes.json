@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/",
+    "element": "Home"
+  },
+  {
+    "path": "/stake",
+    "element": "Stake"
+  },
+  {
+    "path": "/donation",
+    "element": "Donation"
+  },
+  {
+    "path": "*",
+    "element": "NotFound"
+  }
+]
