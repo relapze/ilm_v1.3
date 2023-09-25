@@ -43,64 +43,9 @@ const Donation = () => {
 
         {activeTab === 'ANALYTICS' && (
           <div className={styles.content}>
-            <div className={styles['analyticstab-rectangle']}>
-              <div className={styles['analyticstab-chartrectangle']}>
-                <div className={styles['chart-buttons']}>
-                  <button
-                    className={`${styles['chart-button']} ${
-                      selectedChartButton === 'DAY' ? styles['--selected'] : ''
-                    }`}
-                    onClick={() => handleChartButtonClick('DAY')}
-                  >
-                    DAY
-                  </button>
-                  <button
-                    className={`${styles['chart-button']} ${
-                      selectedChartButton === 'WEEK' ? styles['--selected'] : ''
-                    }`}
-                    onClick={() => handleChartButtonClick('WEEK')}
-                  >
-                    WEEK
-                  </button>
-                  <button
-                    className={`${styles['chart-button']} ${
-                      selectedChartButton === 'MONTH' ? styles['--selected'] : ''
-                    }`}
-                    onClick={() => handleChartButtonClick('MONTH')}
-                  >
-                    MONTH
-                  </button>
-                  <button
-                    className={`${styles['chart-button']} ${
-                      selectedChartButton === 'YEAR' ? styles['--selected'] : ''
-                    }`}
-                    onClick={() => handleChartButtonClick('YEAR')}
-                  >
-                    YEAR
-                  </button>
-                </div>
-       
-              </div>
-              <div className={styles['analyticstab-chartstatcontainer']}>
-                <div className={styles['analyticstab-chartstatbox']}>
-                  <div className={styles['analyticstab-chartstatheading']}>
-                    TOTAL DONATIONS
-                  </div>
-                </div>
-                <div className={styles['analyticstab-chartstatbox']}>
-                  <div className={styles['analyticstab-chartstatheading']}>
-                    NUMBER OF DONATIONS
-                  </div>
-                </div>
-                <div className={styles['analyticstab-chartstatbox']}>
-                  <div className={styles['analyticstab-chartstatheading']}>
-                    TOTAL SUBSCRIPTIONS
-                  </div>
-                </div>
-              </div>
-            </div>
+         
             <div className={styles['analyticstab-recentdonationheading']}>
-              RECENT DONATIONS
+             YOUR REVENUE
             </div>
             <div className={styles['analyticstab-recentdonationrectangle']}>
            
